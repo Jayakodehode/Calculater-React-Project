@@ -1,0 +1,51 @@
+.result input {
+  width: 580px;
+  height: 40px;
+  background-color: var(--result-bg);
+  border: none;
+  padding: 50px;
+  color: var(--whitetext);
+  text-align: right;
+  border-radius: 10px;
+  outline: none;
+  font-size: 38px;
+  letter-spacing: 0.3rem;
+  font-weight: 700;
+}
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+  gap: 1rem;
+  margin: 20px;
+  padding: 30px;
+  width: 580px;
+  background-color: var(--keypad-bg);
+  border-radius: 10px;
+}
+.keypad button {
+  padding: 10px 40px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: var(--key-bg);
+  color: var(--greytext);
+  box-shadow: 0 4px 2px var(--key-bgshadow);
+  font-size: 32px;
+}
+#reset {
+  grid-column: 1/3;
+}
+#reset,
+#del {
+  background-color: var(--reset-del-keybg);
+  color: var(--whitetext);
+  box-shadow: 0 4px 2px var(--reset-del-keybgshadow);
+  font-size: 26px;
+}
+#equal {
+  grid-column: 3/5;
+  background-color: var(--equal-key-bg);
+  box-shadow: 0 4px 2px var(--equal-key-bgshadow);
+  color: var(--whitetext);
+}
