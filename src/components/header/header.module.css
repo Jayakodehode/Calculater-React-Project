@@ -1,0 +1,15 @@
+.header {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: var(--resulttext);
+  height: 50px;
+  margin-bottom: 0.8rem;
+  margin-top: 1rem;
+}
+.header-title {
+  font-size: 2rem;
+  transition: color 0.4s ease;
+}
